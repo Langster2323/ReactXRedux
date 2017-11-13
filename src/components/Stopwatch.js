@@ -44,4 +44,20 @@ export default class Stopwatch extends Component {
       });
     }
   };
+
+  render() {
+    var seconds = Math.floor(this.state.elapsedTime / 1000);
+    return (
+      <div className="stopwatch" >
+        <h2>Stopwatch</h2>
+        <div className="stopwatch-time"> {seconds} </div>
+        { this.state.running ?
+          <button onClick={this.onStop}>Stop</button>
+          :
+          <button onClick={this.onStart}>Start</button>
+        }
+        <button onClick={this.onReset}>Reset</button>
+      </div>
+    )
+  }
 }
