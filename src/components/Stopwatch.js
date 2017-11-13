@@ -20,20 +20,20 @@ export default class Stopwatch extends Component {
       running: true,
       previousTime: Date.now(),
     });
-  },
+  };
 
   onStop = () => {
     this.setState({
       running: false,
     });
-  },
+  };
 
   onReset = () => {
     this.setState({
       elapsedTime: 0,
       previousTime: Date.now(),
     });
-  },
+  };
 
   onTick = () => {
     if (this.state.running) {
@@ -43,5 +43,5 @@ export default class Stopwatch extends Component {
         previousTime: Date.now(),
       });
     }
-  },
+  };
 }
