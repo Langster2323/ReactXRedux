@@ -75,9 +75,6 @@ Header.propTypes = {
   players: React.PropTypes.array.isRequired,
 };
 
-// Move to components/Stats.js
-// ----------------------------------------------------------------------
-
 function Player(props) {
   return (
     <div className="player">
