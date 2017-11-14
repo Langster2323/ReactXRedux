@@ -21,6 +21,7 @@ const Scoreboard = React.createClass({
   getInitialState: function () {
     return INITIAL_STATE;
   },
+  
   onScoreChange: function(index, delta) {
     this.state.players[index].score += delta;
     this.setState(this.state);
