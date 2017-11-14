@@ -1,7 +1,7 @@
 import React, { PropTypes } from 'react';
 
 const Counter = props => {
- return (
+  return (
    <div className="counter" >
      <button className="counter-action decrement" onClick={() => props.onChange(-1)}>
        -
