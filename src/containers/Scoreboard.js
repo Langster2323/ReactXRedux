@@ -21,7 +21,7 @@ const Scoreboard = React.createClass({
   getInitialState: function () {
     return INITIAL_STATE;
   },
-  
+
   onScoreChange: function(index, delta) {
     this.state.players[index].score += delta;
     this.setState(this.state);
@@ -95,27 +95,6 @@ Player.propTypes = {
   score: React.PropTypes.number.isRequired,
   onRemove: React.PropTypes.func.isRequired,
   onScoreChange: React.PropTypes.func.isRequired,
-};
-
-// ----------------------------------------------------------
-
-function Counter(props) {
- return (
-   <div className="counter" >
-     <button className="counter-action decrement" onClick={() => props.onChange(-1)}>
-       -
-     </button>
-     <div className="counter-score"> {props.score} </div>
-     <button className="counter-action increment" onClick={() => props.onChange(1)}>
-       +
-     </button>
-   </div>
- );
-}
-
-Counter.propTypes = {
-  onChange: React.PropTypes.func.isRequired,
-  score: React.PropTypes.number.isRequired,
 };
 
 const AddPlayerForm = React.createClass({

@@ -18,3 +18,5 @@ Counter.propTypes = {
   onChange: React.PropTypes.func.isRequired,
   score: React.PropTypes.number.isRequired,
 };
+
+export default Counter;
