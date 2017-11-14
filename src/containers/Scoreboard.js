@@ -1,5 +1,8 @@
 import react from 'react';
 import Stopwatch from '../components/Stopwatch';
+import Counter from '../components/Counter';
+import Stats from '../components/Stats';
+
 const INITIAL_STATE = {
   players: [
     {
